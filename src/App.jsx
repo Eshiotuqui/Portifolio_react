@@ -10,6 +10,7 @@ import About from './components/About/About';
 
 // PAGES
 import Main from './pages/main/main';
+import Jornada from './components/Jornada/Jornada';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -45,7 +46,7 @@ function AnimatedRoutes({ theme, toggleTheme }) {
             <Route path="/" element={<Main theme={theme} toggleTheme={toggleTheme} />}>
               <Route index element={<Home theme={theme} toggleTheme={toggleTheme} />} />
               <Route path="sobre" element={<About theme={theme} toggleTheme={toggleTheme} />} />
-              {/* Adicione suas outras rotas aqui */}
+              <Route path="jornada" element={<Jornada theme={theme} toggleTheme={toggleTheme}/>}/>
             </Route>
           </Routes>
         </CSSTransition>

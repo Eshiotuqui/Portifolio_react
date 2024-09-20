@@ -1,5 +1,6 @@
 // Home.js
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 import './home_styles.scss';
 
 const Home = ({ theme, toggleTheme }) => {
@@ -66,9 +67,9 @@ const Home = ({ theme, toggleTheme }) => {
             em web design, qualidade de produto e experiência do usuário
           </p>
           <div className="home_buttons">
-            <a href="#about" className="button">
+            <NavLink className="button" to="/sobre">
               <i className="uil uil-user button_icon"></i>Sobre mim
-            </a>
+            </NavLink>
             <a
               href="./assets/CV-EnzoShiotuqui.docx.pdf"
               className="button"
