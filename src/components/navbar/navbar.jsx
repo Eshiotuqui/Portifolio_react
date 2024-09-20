@@ -1,9 +1,56 @@
-import React from 'react'
+// SASS
+import "./navbar_styles.scss"
 
-const navbar = () => {
+// LINK
+import { NavLink } from 'react-router-dom'
+
+const Navbar = () => {
   return (
-    <div>navbar</div>
+      <>
+        <aside className="sidebar" id="sidebar">
+        <nav className="nav">
+            <div className="nav_logo">
+                <NavLink to="/" className="nav_logo_text">S</NavLink>
+            </div>
+
+            <div className="nav_menu">
+                <div className="menu">
+                    <ul className="nav_list">
+                        <li className="nav_item">
+                            <NavLink to="/" className="nav_link" activeClassName="active-link">Home</NavLink>
+                        </li>
+                        <li className="nav_item">
+                            <NavLink to="/sobre" className="nav_link" activeClassName="active-link">Sobre</NavLink>
+                        </li>
+                        <li className="nav_item">
+                            <NavLink to="/jornada" className="nav_link" activeClassName="active-link">Jornada</NavLink>
+                        </li>
+                        <li className="nav_item">
+                            <NavLink to="/skills" className="nav_link" activeClassName="active-link">Skills</NavLink>
+                        </li>
+                        <li className="nav_item">
+                            <NavLink to="/projetos" className="nav_link" activeClassName="active-link">Projetos</NavLink>
+                        </li>
+                        <li className="nav_item">
+                            <NavLink to="/servicos" className="nav_link" activeClassName="active-link">Serviços</NavLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="btn_share">
+                <NavLink to="/contato" style={{ color: "var(--skin-color)" }}>
+                    <i className="uil uil-share-alt social_share"></i>
+                </NavLink>
+            </div>
+
+            <div className="nav_close" id="nav_close">
+                <i className="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+      </>
   )
 }
 
-export default navbar
+export default Navbar
