@@ -17,22 +17,22 @@ const Navbar = () => {
                 <div className="menu">
                     <ul className="nav_list">
                         <li className="nav_item">
-                            <NavLink to="/" className="nav_link" activeClassName="active-link">Home</NavLink>
+                            <NavLink to="/" className="nav_link" >Home</NavLink>
                         </li>
                         <li className="nav_item">
-                            <NavLink to="/sobre" className="nav_link" activeClassName="active-link">Sobre</NavLink>
+                            <NavLink to="/sobre" className="nav_link" >Sobre</NavLink>
                         </li>
                         <li className="nav_item">
-                            <NavLink to="/jornada" className="nav_link" activeClassName="active-link">Jornada</NavLink>
+                            <NavLink to="/jornada" className="nav_link" >Jornada</NavLink>
                         </li>
                         <li className="nav_item">
-                            <NavLink to="/skills" className="nav_link" activeClassName="active-link">Skills</NavLink>
+                            <NavLink to="/skills" className="nav_link" >Skills</NavLink>
                         </li>
                         <li className="nav_item">
-                            <NavLink to="/projetos" className="nav_link" activeClassName="active-link">Projetos</NavLink>
+                            <NavLink to="/projetos" className="nav_link" >Projetos</NavLink>
                         </li>
                         <li className="nav_item">
-                            <NavLink to="/servicos" className="nav_link" activeClassName="active-link">Serviços</NavLink>
+                            <NavLink to="/servicos" className="nav_link" >Serviços</NavLink>
                         </li>
                     </ul>
                 </div>

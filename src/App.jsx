@@ -7,6 +7,8 @@ import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
 // COMPONENTES
 import Navbar from './components/navbar/navbar'
 
+// PAGES
+import Home from './pages/Home'
 function App() {
 
 
@@ -14,9 +16,9 @@ function App() {
      <div className='App'>
          <BrowserRouter>
          <Navbar/>
-             <div className='container'>
+             <div className='main'>
                 <Routes>
-                    <Route path="/"/>
+                    <Route path="/"  element={<Home/>}/>
                     <Route path="/sobre"/>
                     <Route path="/jornada"/>
                     <Route path="/skills"/>
