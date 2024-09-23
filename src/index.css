@@ -240,3 +240,21 @@ input {
 .button_icon {
   font-size: 1.25rem;
 }
+
+/* destaque */
+
+.destaque_text {
+  color: var(--skin-color);
+  font-weight: bold;
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+
+}

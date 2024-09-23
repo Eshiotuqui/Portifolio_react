@@ -6,11 +6,10 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // COMPONENTES
 import Navbar from './components/navbar/navbar';
 import Home from './components/Home/Home';
-import About from './components/About/About';
+import Skills from "./components/skills/Skills"
 
 // PAGES
 import Main from './pages/main/main';
-import Jornada from './components/Jornada/Jornada';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -41,12 +40,16 @@ function AnimatedRoutes({ theme, toggleTheme }) {
   return (
     <div className="main">
       <TransitionGroup>
-        <CSSTransition key={location.key} classNames="fade" timeout={400}>
+        <CSSTransition
+          key={location.pathname}
+          timeout={300} 
+          classNames="fade" 
+          unmountOnExit
+        >
           <Routes location={location}>
             <Route path="/" element={<Main theme={theme} toggleTheme={toggleTheme} />}>
               <Route index element={<Home theme={theme} toggleTheme={toggleTheme} />} />
-              <Route path="sobre" element={<About theme={theme} toggleTheme={toggleTheme} />} />
-              <Route path="jornada" element={<Jornada theme={theme} toggleTheme={toggleTheme}/>}/>
+              <Route path="skills" element={<Skills theme={theme} toggleTheme={toggleTheme}/>}/>
             </Route>
           </Routes>
         </CSSTransition>
