@@ -6,7 +6,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // COMPONENTES
 import Navbar from './components/navbar/navbar';
 import Home from './components/Home/Home';
-import Skills from "./components/skills/Skills"
+import Curriculum from './components/curriculum/curriculum';
 
 // PAGES
 import Main from './pages/main/main';
@@ -35,7 +35,7 @@ function App() {
 }
 
 function AnimatedRoutes({ theme, toggleTheme }) {
-  const location = useLocation(); // Agora useLocation está dentro do BrowserRouter
+  const location = useLocation();
 
   return (
     <div className="main">
@@ -49,7 +49,7 @@ function AnimatedRoutes({ theme, toggleTheme }) {
           <Routes location={location}>
             <Route path="/" element={<Main theme={theme} toggleTheme={toggleTheme} />}>
               <Route index element={<Home theme={theme} toggleTheme={toggleTheme} />} />
-              <Route path="skills" element={<Skills theme={theme} toggleTheme={toggleTheme}/>}/>
+              <Route path="curriculum" element={<Curriculum  theme={theme} toggleTheme={toggleTheme}/>}/>
             </Route>
           </Routes>
         </CSSTransition>
