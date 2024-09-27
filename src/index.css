@@ -264,3 +264,11 @@ input {
   opacity: 1;
   visibility: visible;
 }
+
+
+@media screen and (max-width: 1408px) {
+  .container {
+      margin-left: var(--mb-2-5);
+      margin-right: var(--mb-2-5);
+  }
+}

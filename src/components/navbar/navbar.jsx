@@ -17,13 +17,22 @@ const Navbar = () => {
                 <div className="menu">
                     <ul className="nav_list">
                         <li className="nav_item">
-                            <NavLink to="/" className="nav_link" >Home</NavLink>
+                            <NavLink to="/" className="nav_link">
+                                <i className="uil uil-estate nav_icon"></i>
+                                Home
+                            </NavLink>
                         </li>
                         <li className="nav_item">
-                            <NavLink to="/curriculum" className="nav_link" >Currículo</NavLink>
+                            <NavLink to="/curriculum" className="nav_link">
+                                <i className="uil uil-user nav_icon"></i>
+                                Currículo
+                            </NavLink>
                         </li>
                         <li className="nav_item">
-                            <NavLink to="/projetos" className="nav_link" >Projetos</NavLink>
+                            <NavLink to="/projetos" className="nav_link">
+                                <i className="uil uil-briefcase-alt nav_icon"></i>
+                                Projetos
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

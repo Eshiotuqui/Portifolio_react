@@ -1,0 +1,148 @@
+// HOME
+
+.home {
+    background: url(../../../assets/img/dark.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+
+    .home_img {
+        display: none;
+    }
+    
+    .home_container {
+        position: relative;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .home_buttons {
+        display: flex;
+        column-gap: 1rem;
+    }
+    
+    
+    .home_title {
+        font-size: var(--biggest-font-size);
+    }
+    
+    .home_subtitle {
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
+        margin-bottom: var(--mb-0-75);
+    }
+    
+    .home_description {
+        max-width: 450px;
+        margin-bottom: var(--mb-2);
+    }
+    
+    
+    .home_img {
+        max-width: 50%;
+        height: auto; 
+        object-fit: cover;
+        padding-left: 130px;
+    }
+    
+    .home_social {
+        position: absolute;
+        top: 1.8rem;
+        left: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 3.5rem;
+    }
+    
+    .home_social_follow {
+        font-weight: var(--font-medium);
+    }
+    
+    .home_social_follow::after {
+        content: '';
+        position: absolute;
+        width: 1rem;
+        height: 2px;
+        right: -45%;
+        top: 50%;
+        background-color: var(--text-color);
+    }
+    
+    .home_social_links {
+        display: inline-flex;
+        column-gap: 1rem;
+    }
+    
+    .home_social_link {
+        font-size: 1.08rem;
+        color: var(--text-color);
+        transition: .4s;
+    }
+    
+    .home_social_link:hover{
+        transform: translateY(.25rem);
+    }
+    
+    .my_info {
+        display: flex;
+        column-gap: 1.8rem;
+        position: absolute;
+        left: 0;
+        bottom: 1.8rem;
+    }
+    
+    .info_item {
+        display: flex;
+        align-items: center;
+    }
+    
+    .info_title,
+    .info_subtitle {
+        font-size: var(--small-font-size);
+    }
+    
+    .info_title{
+        font-weight: var(--font-medium);
+    }
+    
+    .info_icon {
+        font-size: 1.8rem;
+        color: var(--skin-color);
+        margin-right: var(--mb-0-75);
+    }
+
+
+}
+
+/* Modo Light */
+[data-theme="light"] .home {
+    background: url(../../../assets/img/light.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animated {
+    animation: slideIn 0.8s ease forwards;
+  }
+
+
+
+
+
+
+
+
+
+

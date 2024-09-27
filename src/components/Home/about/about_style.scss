@@ -1,0 +1,94 @@
+// SOBRE
+.about_container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    align-items: center;
+
+    .about_img {
+        width: 480px;
+        border-radius: 0.75rem;
+        height: 450px;
+        justify-self: center;
+    }
+    
+    .about_heading {
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-0-75);
+    }
+    
+    .about_description {
+        text-align: justify;
+        padding-right: 6rem;
+        margin-bottom: var(--mb-2);
+    }
+    
+    .about_info {
+        display: grid;
+        grid-template-columns: repeat(3, 140px);
+        column-gap: .5rem;
+        margin-bottom: var(--mb-3);
+    }
+    
+    .about_box {
+        text-align: center;
+        border-radius: .25rem;
+        padding: 1rem, 1.25rem;
+        background-color: var(--box-color);
+    }
+    
+    .about_icon {
+        font-size: 1.25rem;
+        color: var(--title-color);
+        margin-bottom: var(--mb-0-75);
+    }
+    
+    .about_title {
+        font-size: var(--small-font-size);
+    }
+    
+    .about_subtitle {
+        font-size: var(--smaller-font-size);
+    }
+
+    .about_box {
+        // display: inline-flex;
+        cursor: pointer;
+        align-items: center;
+        // column-gap: .5rem;
+        background-color: var(--skin-color);
+        color: var(--title-color);
+        padding: .75rem 1.4rem;
+        border-radius: .25rem;
+        font-weight: var(--font-medium);
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        text-align: center;
+        border-radius: .25rem;
+        padding: 1rem, 1.25rem;
+        background-color: var(--box-color);
+      }
+      
+      .about_box::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform-origin: center;
+        height: 100%;
+        background-color: var(--skin-color);
+        z-index: -1;
+        transition: .4s;
+        transform: scale(0);
+        border-radius: .25rem;  
+        color: black;    
+      }
+      
+      .about_box:hover::after {
+        transform: scale(1);
+        color: black;    
+
+      }
+}
+
