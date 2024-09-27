@@ -258,3 +258,9 @@ input {
   background-color: var(--scroll-thumb-color);
 
 }
+
+/* Active Modal*/
+.active_modal {
+  opacity: 1;
+  visibility: visible;
+}

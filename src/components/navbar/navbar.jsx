@@ -20,13 +20,10 @@ const Navbar = () => {
                             <NavLink to="/" className="nav_link" >Home</NavLink>
                         </li>
                         <li className="nav_item">
-                            <NavLink to="/skills" className="nav_link" >Skills</NavLink>
+                            <NavLink to="/curriculum" className="nav_link" >Currículo</NavLink>
                         </li>
                         <li className="nav_item">
                             <NavLink to="/projetos" className="nav_link" >Projetos</NavLink>
-                        </li>
-                        <li className="nav_item">
-                            <NavLink to="/servicos" className="nav_link" >Serviços</NavLink>
                         </li>
                     </ul>
                 </div>
