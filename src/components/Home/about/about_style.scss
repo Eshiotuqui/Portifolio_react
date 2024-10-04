@@ -50,45 +50,66 @@
         font-size: var(--smaller-font-size);
     }
 
-    .about_box {
-        // display: inline-flex;
-        cursor: pointer;
-        align-items: center;
-        // column-gap: .5rem;
-        background-color: var(--skin-color);
-        color: var(--title-color);
-        padding: .75rem 1.4rem;
-        border-radius: .25rem;
-        font-weight: var(--font-medium);
-        position: relative;
-        text-align: center;
-        z-index: 1;
-        text-align: center;
-        border-radius: .25rem;
-        padding: 1rem, 1.25rem;
-        background-color: var(--box-color);
-      }
-      
-      .about_box::after {
-        position: absolute;
-        content: '';
-        left: 0;
-        top: 0;
-        width: 100%;
-        transform-origin: center;
-        height: 100%;
-        background-color: var(--skin-color);
-        z-index: -1;
-        transition: .4s;
-        transform: scale(0);
-        border-radius: .25rem;  
-        color: black;    
-      }
-      
-      .about_box:hover::after {
-        transform: scale(1);
-        color: black;    
+  
 
+      @media screen and (max-width: 1216px) {
+        .about_container {
+            column-gap: 2.5rem;
+        }
+      
+        .about_description {
+            padding-right: 0;
+        }
       }
+
+      @media screen and (max-width: 1024px) {
+        .about_img {
+            width: 350px;
+            height: 350px;
+        }
+      
+        .about_container {
+            grid-template-columns: 1fr;
+            row-gap: 2.5rem;
+        }
+      
+        .about_data {
+            text-align: center;
+        }
+      
+        .about_info {
+            justify-content: center;
+        }
+      
+        .about_description {
+            padding:  0 4rem;
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .about_img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .about_info {
+            grid-template-columns: repeat(3,1fr);
+        }
+      
+        .about_description {
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .about_info {
+            row-gap: .5rem;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
 }
+
 

@@ -1,6 +1,8 @@
 import './projetos_styles.scss'
 import React, { useState } from "react";
 
+import Footer from '../footer/footer'
+
 // Imagens 
 import parcele from '../../assets/img/parcele.png';
 import dashboard from '../../assets/img/dash.png';
@@ -244,7 +246,7 @@ const projetos = () => {
         </div>
     )}
 
-       
+    <Footer/>
     </>
   );
 };

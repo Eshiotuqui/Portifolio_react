@@ -3,13 +3,15 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-// COMPONENTES
+// Componentes
 import Navbar from './components/navbar/navbar';
 import Home from './components/Home/Home';
 import Curriculum from './components/curriculum/curriculum';
-import Projetos from './components/projetos/projetos'
+import Projetos from './components/projetos/projetos';
+import Contato from './components/contato/contato';
+import Header from './components/header/header';
 
-// PAGES
+// Pages
 import Main from './pages/main/main';
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        {/* <Header theme={theme} toggleTheme={toggleTheme}/> */}
         <AnimatedRoutes theme={theme} toggleTheme={toggleTheme} />
       </BrowserRouter>
     </div>
@@ -43,15 +46,18 @@ function AnimatedRoutes({ theme, toggleTheme }) {
       <TransitionGroup>
         <CSSTransition
           key={location.pathname}
-          timeout={300} 
-          classNames="fade" 
+          timeout={300}
+          classNames="fade"
           unmountOnExit
         >
           <Routes location={location}>
             <Route path="/" element={<Main theme={theme} toggleTheme={toggleTheme} />}>
               <Route index element={<Home theme={theme} toggleTheme={toggleTheme} />} />
-              <Route path="curriculum" element={<Curriculum  theme={theme} toggleTheme={toggleTheme}/>}/>
-              <Route path="projetos" element={<Projetos theme={theme} toggleTheme={toggleTheme}/>}/>
+              <Route path="curriculum" element={<Curriculum theme={theme} toggleTheme={toggleTheme} />} />
+              <Route path="curriculum/skills" element={<Curriculum theme={theme} toggleTheme={toggleTheme} />} />
+              <Route path="curriculum/servicos" element={<Curriculum theme={theme} toggleTheme={toggleTheme} />} />
+              <Route path="projetos" element={<Projetos theme={theme} toggleTheme={toggleTheme} />} />
+              <Route path="contato" element={<Contato theme={theme} toggleTheme={toggleTheme} />} />
             </Route>
           </Routes>
         </CSSTransition>
