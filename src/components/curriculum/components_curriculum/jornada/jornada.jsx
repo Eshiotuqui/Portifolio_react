@@ -5,7 +5,7 @@ import './jornada_style.scss';
 
 const Jornada = () => {
     const [showModal, setShowModal] = useState(false);
-    const [modalContent, setModalContent] = useState({}); // Novo estado para armazenar conteúdo do modal
+    const [modalContent, setModalContent] = useState({}); 
 
     const handleClose = () => setShowModal(false);
     const handleShow = (content) => {
