@@ -7,6 +7,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Navbar from './components/navbar/navbar';
 import Home from './components/Home/Home';
 import Curriculum from './components/curriculum/curriculum';
+import Projetos from './components/projetos/projetos'
 
 // PAGES
 import Main from './pages/main/main';
@@ -50,6 +51,7 @@ function AnimatedRoutes({ theme, toggleTheme }) {
             <Route path="/" element={<Main theme={theme} toggleTheme={toggleTheme} />}>
               <Route index element={<Home theme={theme} toggleTheme={toggleTheme} />} />
               <Route path="curriculum" element={<Curriculum  theme={theme} toggleTheme={toggleTheme}/>}/>
+              <Route path="projetos" element={<Projetos theme={theme} toggleTheme={toggleTheme}/>}/>
             </Route>
           </Routes>
         </CSSTransition>
