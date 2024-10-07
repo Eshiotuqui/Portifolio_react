@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <Navbar/> */}
+        <Navbar/>
         <Header theme={theme} toggleTheme={toggleTheme}/>
         <AnimatedRoutes theme={theme} toggleTheme={toggleTheme} />
       </BrowserRouter>

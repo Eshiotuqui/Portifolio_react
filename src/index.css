@@ -155,9 +155,11 @@ input {
   position: relative;
   height: 26px;
   width: 50px;;
-  transform: scale(1.5);
-
+  transform: scale(1.3);
 }
+
+
+
 
 
 .label .ball {
@@ -556,6 +558,10 @@ input {
  .home_title {
   font-size: var(--h1-font-size);
  }
+
+  .label {
+      transform: scale(1.2);
+  }
 
 
 
