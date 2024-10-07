@@ -275,14 +275,7 @@ input {
 }
 
 @media screen and (max-width: 1216px) {
-  .about_container {
-      column-gap: 2.5rem;
-  }
-
-  .about_description {
-      padding-right: 0;
-  }
-
+ 
   .work_container {
       grid-template-columns: repeat(2, 330px);
       gap: 2.5rem;
@@ -291,43 +284,15 @@ input {
 
 }
 
-@media screen and (max-width: 1024px) {
-  .container {
-      margin-left: var(--mb-1-5);
-      margin-right: var(--mb-1-5);
-  }
-}
 
 @media screen and (max-width: 1024px) {
   .container {
       margin-left: var(--mb-1-5);
       margin-right: var(--mb-1-5);
+      padding: 0;
+      margin: 0;
   }
 
-
-
-  .about_img {
-      width: 350px;
-      height: 350px;
-  }
-
-  .about_container {
-      grid-template-columns: 1fr;
-      row-gap: 2.5rem;
-  }
-
-  .about_data {
-      text-align: center;
-  }
-
-  .about_info {
-      justify-content: center;
-  }
-
-  .about_description {
-      padding:  0 4rem;
-      text-align: center;
-  }
 
   .qualification_container {
       grid-template-columns: repeat(2, 290px);
@@ -394,10 +359,6 @@ input {
       background: var(--box-color);
   }
 
-  .about_img {
-      width: 250px;
-      height: 250px;
-  }
 
   .qualification_container {
       grid-template-columns: 290px;
@@ -547,14 +508,6 @@ input {
       font-size: var(--h3-font-size);
   }
 
-  .about_info {
-      grid-template-columns: repeat(3,1fr);
-  }
-
-  .about_description {
-      padding: 0;
-  }
-
   .services_modal_content {
       padding: 4.5rem 1.5rem 2.5rem;
   }
@@ -587,11 +540,6 @@ input {
   padding: 1rem 1rem 1rem 1rem;
  }
 
- 
-
- .portifolio_popup_close {
-      
- }
  .portifolio_popup_img{
   width: 220px;
   height: 220px;
@@ -611,10 +559,7 @@ input {
 
 
 
- .about_info {
-  row-gap: .5rem;
-  grid-template-columns: repeat(2,1fr);
- }
+ 
 
  .work_container,
  .skills_container,
@@ -655,4 +600,6 @@ input {
  }
 
 }
+
+
 

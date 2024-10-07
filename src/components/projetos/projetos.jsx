@@ -107,6 +107,7 @@ const projetos = () => {
       papel: 'Frontend',
       description: 'Gerador de senha feita para ajudar a decidir como proteger sua conta... podendo escolher em até 30 caracteres com símbolos, números e letras.',
       tecnologias: 'HTML | CSS | JavaScript',
+      link: 'https://gennpassword.netlify.app/',
       git : 'https://github.com/EnzoMiShiotuqui/Gerador-de-senha'
     },
   ];
@@ -233,7 +234,7 @@ const projetos = () => {
                                                 rel="noopener noferrer"
                                                 style={{display: 'inline-flex', alignItems: 'center'}}
                                             >
-                                                <i class="uil uil-github  skill_portifolio"></i>
+                                                <i className="uil uil-github  skill_portifolio"></i>
                                             </a>
                                         </span>
                                     </li>

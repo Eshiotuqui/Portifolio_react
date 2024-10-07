@@ -1,6 +1,6 @@
 .home_social {
     display: flex;
-    height: 70px;;
+    height: 10px;
     align-items: center;
     column-gap: 3.5rem;
 }
@@ -11,6 +11,7 @@
     align-items: center;
     column-gap: 3.5rem;
     background-color: var(--box-color);
+    padding: 5px;
 }
 
 .home_social_follow {
@@ -41,3 +42,22 @@
 .home_social_link:hover{
     transform: translateY(.25rem);
 }
+
+
+@media screen and (max-width: 768px) {
+    .title_header {
+        padding-left: 46px;
+    }
+}
+
+@media screen and (max-width: 576px)  {
+    .home_box {
+        column-gap: 0.3rem;
+    }
+    .title_header {
+        padding-left: 0;
+    }
+}
+
+
+

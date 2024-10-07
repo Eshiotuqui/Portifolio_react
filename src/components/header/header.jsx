@@ -1,11 +1,12 @@
 import React from 'react';
 import './header_style.scss';
+import { NavLink } from 'react-router-dom'
 
 const Header = ({ theme, toggleTheme }) => {
   return (
     <>
         <div className='home_box'>
-            <h3>Shiotuqui.</h3>
+            <NavLink to="/"><h3 className='title_header'>Shiotuqui.</h3></NavLink>
             <div className="home_social">
                 <span className="home_social-follow">Me siga</span>
                 <div className="home_social_links">
