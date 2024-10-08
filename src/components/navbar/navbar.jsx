@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
       <>
-        <aside className="sidebar" id="sidebar">
+        <aside className="sidebar show_sidebar" id="sidebar">
         <nav className="nav">
             <div className="nav_logo">
                 <NavLink to="/" className="nav_logo_text">S</NavLink>

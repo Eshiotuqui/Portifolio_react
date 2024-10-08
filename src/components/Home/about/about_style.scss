@@ -26,6 +26,39 @@
         }
     }
 
+    .about_box{
+        // display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        background-color: var(--skin-color);
+        color: var(--title-color);
+        padding: .75rem 1.4rem;
+        border-radius: .25rem;
+        font-weight: var(--font-medium);
+        position: relative;
+        text-align: center;
+        z-index: 1;
+      }
+      
+      .about_box::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform-origin: center;
+        height: 100%;
+        background-color: var(--box-color);
+        z-index: -1;
+        transition: .4s;
+        transform: scale(0);
+        border-radius: .25rem;
+      }
+      
+      .about_box:hover::after {
+        transform: scale(1);
+      }
+
     .about_heading {
         font-size: var(--h3-font-size);
         margin-bottom: var(--mb-0-75);
@@ -38,7 +71,7 @@
     
     .about_info {
         display: grid;
-        grid-template-columns: repeat(3, 130px);
+        grid-template-columns: repeat(4, 130px);
         column-gap: .5rem;
         margin-bottom: var(--mb-3);
     }
@@ -47,7 +80,7 @@
         text-align: center;
         border-radius: .25rem;
         padding: 1rem, 1.25rem;
-        background-color: var(--box-color);
+        // background-color: var(--box-color);
     }
     
     .about_icon {
@@ -64,11 +97,12 @@
         font-size: var(--smaller-font-size);
     }
 
-    @media screen and (max-width: 375px) {
+
+    @media screen and (max-width: 576px) {
         .about_info {
-            row-gap: .5rem;
-            grid-template-columns: repeat(2,1fr);
-            padding: 10px;
+            grid-template-columns: repeat(2,130px);
+            row-gap: 20px;
+            column-gap: 20px;
         }
     }
 }
@@ -117,9 +151,11 @@
 
 @media screen and (max-width: 576px) {
     .about_info {
-        grid-template-columns: repeat(3,130px);
+        grid-template-columns: repeat(2,130px);
     }
 }
+
+
 
 
 

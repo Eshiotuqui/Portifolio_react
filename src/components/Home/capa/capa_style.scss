@@ -118,7 +118,7 @@
 
     @media screen and (max-width: 1024px){
         .my_info {
-            bottom: 8.8rem;
+            bottom: 5rem;
             left: 40px;
         }
     }
@@ -173,10 +173,6 @@
            width: auto;
         }
 
-        .my_info {
-            padding: 0 0 50px ;
-        }
-
         .home .home_container {
             margin: 0;
             padding: 0;
@@ -184,6 +180,11 @@
 
         .home_description {
             text-align: justify;
+        }
+
+        .my_info {
+            left: 20px;
+            bottom: 2rem;
         }
       
         .home_social {
@@ -221,6 +222,7 @@
 
         .my_info {
             padding: 0;
+            bottom: 1rem;
         }
         .home_social_links {
             margin-right: var(--mb-0-75);

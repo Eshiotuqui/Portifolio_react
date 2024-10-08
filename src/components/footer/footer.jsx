@@ -2,16 +2,17 @@ import React from 'react'
 import './footer_style.scss'
 import { NavLink } from 'react-router-dom'
 
+
 const footer = () => {
   return (
     <>
         <footer className="footer">
             <div className="footer_bg">
                 <div className="footer_container container grid">
-                    <div>
+                    <NavLink to="/">
                         <h1 className="footer_title">Enzo Shiotuqui</h1>
                         <span className="footer_subtitle">Dev Fullstack</span>
-                    </div>
+                    </NavLink>
 
                     <ul className="footer_links">
                     <li>
