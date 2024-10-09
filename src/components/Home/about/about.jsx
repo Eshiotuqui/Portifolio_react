@@ -34,18 +34,23 @@ const about = () => {
                             <span className="about_subtitle">+ 23 projetos </span>
                         </div>
                     </NavLink>
-                    <NavLink to="/servicos">
+                    <NavLink to="/contato">
                         <div className="about_box">
                             <i className="uil uil-headphones-alt about_icon"></i>
                             <h3 className="about_title">Suporte</h3>
                             <span className="about_subtitle">Online 24/7</span>
                         </div>
                     </NavLink> 
+                    <div className="about_box">
+                            <i className="uil uil-coffee about_icon"></i>
+                            <h3 className="about_title">Café</h3>
+                            <span className="about_subtitle">Quentinho!</span>
+                        </div>
                     </div>
 
-                    <a href="#contact" className="button"><i className="uil uil-navigator button_icon"></i>
+                    <NavLink to="/contato" href="#contact" className="button"><i className="uil uil-navigator button_icon"></i>
                         Entre em contato!
-                    </a>
+                    </NavLink>
 
                 </div>
             </div>
