@@ -12,6 +12,7 @@ import racoom from '../../assets/img/gua.png';
 import weather from '../../assets/img/weather.app.png';
 import piglet from '../../assets/img/piglet.png';
 import senha from '../../assets/img/senha.png'
+import todo from "../../assets/img/todo.png"
 
 const projetos = () => {
   // Lista de projetos
@@ -75,7 +76,18 @@ const projetos = () => {
       git: 'https://github.com/EnzoMiShiotuqui/racomBlog'
     },
     {
-      id: 6,
+        id: 6,
+        title: 'To do list',
+        category: 'web app',
+        img: todo,
+        data: '14/10/2024',
+        papel:'Backend',
+        description: 'Projeto de um TO-DO list, na qual fiz o backend usando uma API feita em  node e express, com conexão de banco de dados mysql, além de um design mimalista usando HTML e CSS, A to-do possui um CRUD na qual é possível editar e remover alguma tarefa, além de alterar o status da tarefa em 3 opções',
+        tecnologias: 'Node | Express | MySql | JS ',
+        git: 'https://github.com/EnzoMiShiotuqui/TO-DO-LIST'
+    },
+    {
+      id: 7,
       title: 'Weather.IO',
       category: 'web',
       img: weather,
@@ -87,7 +99,7 @@ const projetos = () => {
       git: 'https://github.com/EnzoMiShiotuqui/weatherApp'
     },
     {
-      id: 7,
+      id: 8,
       title: 'PigLet',
       category: 'app',
       img: piglet,
@@ -99,7 +111,7 @@ const projetos = () => {
       git: 'https://github.com/EnzoMiShiotuqui/Piglet'
     },
     {
-      id: 8,
+      id: 9,
       title: 'Gerador de senha',
       category: 'app',
       img: senha,
@@ -215,30 +227,35 @@ const projetos = () => {
                                 <li>
                                     Papel - <span>{selectedProject.papel}</span>
                                 </li>
-                                {selectedProject.link && (
+                                {(selectedProject.link || selectedProject.git) && (
                                     <li>
-                                        <span>
-                                        <a 
-                                            href={selectedProject.link} 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            style={{ display: 'inline-flex', alignItems: 'center' }} // Alinha o ícone e o texto, se necessário
-                                        >
-                                            <i className="uil uil-globe skill_portifolio" style={{ marginRight: '5px' }}></i>
-                                        </a>
-                                        </span>
-                                        <span>
-                                            <a 
-                                                href={selectedProject.git}
-                                                target='_blank'
-                                                rel="noopener noferrer"
-                                                style={{display: 'inline-flex', alignItems: 'center'}}
-                                            >
-                                                <i className="uil uil-github  skill_portifolio"></i>
-                                            </a>
-                                        </span>
+                                        {selectedProject.link && (
+                                            <span>
+                                                <a 
+                                                    href={selectedProject.link} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                    style={{ display: 'inline-flex', alignItems: 'center' }}
+                                                >
+                                                    <i className="uil uil-globe skill_portifolio" style={{ marginRight: '5px' }}></i>
+                                                </a>
+                                            </span>
+                                        )}
+                                        {selectedProject.git && (
+                                            <span>
+                                                <a 
+                                                    href={selectedProject.git}
+                                                    target='_blank'
+                                                    rel="noopener noreferrer"
+                                                    style={{ display: 'inline-flex', alignItems: 'center' }}
+                                                >
+                                                    <i className="uil uil-github skill_portifolio"></i>
+                                                </a>
+                                            </span>
+                                        )}
                                     </li>
-                                    )}
+                                )}
+
                             </ul>
                         </div>
                     </div>
