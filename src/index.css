@@ -6,11 +6,11 @@
   --hue-color:242;
 
   /* HSL Color Mode */
-  --skin-color: hsl(260, 76%, 33%);
+  --skin-color: #ff5e1e;
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 85%);
-  --body-color: hsl(var(--hue-color), 19%, 5%);
-  --box-color: hsl(var(--hue-color), 14%, 10%);
+  --body-color: #201f1b;
+  --box-color: #3f3c37;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
 
