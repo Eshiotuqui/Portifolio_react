@@ -4,15 +4,15 @@ import React, { useState } from "react";
 import Footer from '../footer/footer'
 
 // Imagens 
-import parcele from '../../assets/img/parcele.png';
+import parcele from '../../assets/gif/parcele.gif';
 import dashboard from '../../assets/img/dash.png';
-import food from '../../assets/img/food.png';
-import thanos from '../../assets/img/sneakers.png';
-import racoom from '../../assets/img/gua.png';
-import weather from '../../assets/img/weather.app.png';
-import piglet from '../../assets/img/piglet.png';
-import senha from '../../assets/img/senha.png'
-import todo from "../../assets/img/todo.png"
+import food from '../../assets/gif/food.gif';
+import thanos from '../../assets/gif/thanos.gif';
+import racoom from '../../assets/gif/racoom.gif';
+import weather from '../../assets/gif/clima.gif';
+import piglet from '../../assets/gif/piglet.gif';
+import senha from '../../assets/gif/senha.gif'
+import todo from "../../assets/gif/todo.gif"
 
 const projetos = () => {
   // Lista de projetos
