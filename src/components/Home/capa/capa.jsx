@@ -7,7 +7,7 @@ import CV from '/CV-EnzoShiotuqui.pdf'
 const capa = () => {
   return (
     <>
-        <div className="home_container container grid">
+        <div className="home_container container grid ">
         <div className="home_data">
           <h1 className="home_title">Olá, sou Enzo Shiotuqui</h1>
           <h3 className="home_subtitle">Programador Fullstack</h3>
