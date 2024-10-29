@@ -2,7 +2,7 @@ import React from 'react'
 
 import './capa_style.scss'
 // CV
-import CV from '/CV-EnzoShiotuqui.pdf'
+import CV from '../../../assets/CV-EnzoShiotuqui.pdf'
 
 const capa = () => {
   return (
