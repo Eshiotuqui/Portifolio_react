@@ -10,9 +10,9 @@ const capa = () => {
         <div className="home_container container grid ">
         <div className="home_data">
           <h1 className="home_title">Olá, sou Enzo Shiotuqui</h1>
-          <h3 className="home_subtitle">Programador Fullstack</h3>
+          <h3 className="home_subtitle">Programador Front-end</h3>
           <p className="home_description">
-            Programador fullstack com foco em frontend com alto conhecimento
+            Programador front-end com foco em frontend com alto conhecimento
             em web design, qualidade de produto e experiência do usuário, com experiência em tecnologias como <span className='destaque_text'>React</span> , <span className='destaque_text'>Vue.js</span>, <span className='destaque_text'>Javascript</span> , <span className='destaque_text'>Python </span> , <span className='destaque_text'>Node.js</span> entre outras
           </p>
           <div className="home_buttons">
