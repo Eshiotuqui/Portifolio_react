@@ -17,7 +17,7 @@ const about = () => {
 
                 <div className="about_data">
                     <h3 className="about_heading">Olá, sou Enzo Shiotuqui</h3>
-                    <p className="about_description">Desenvolvedor Fullstack com foco em frontend, com conhecimento e experiência em tecnologias web e UI/UX design. Entregando qualidade de trabalho! focado em tecnologias como <span className='destaque_text'>React</span> , <span className='destaque_text'>Vue.js</span>, <span className='destaque_text'>Javascript</span> , <span className='destaque_text'>Python </span> , <span className='destaque_text'>Node.js</span></p>
+                    <p className="about_description">Desenvolvedor frontend, com conhecimento e experiência em tecnologias web e UI/UX design. Entregando qualidade de trabalho! focado em tecnologias como <span className='destaque_text'>React</span> , <span className='destaque_text'>Vue.js</span>, <span className='destaque_text'>Javascript</span> , <span className='destaque_text'>Python </span> , <span className='destaque_text'>Node.js</span></p>
 
                     <div className="about_info grid">
                     <NavLink to="/curriculum">
